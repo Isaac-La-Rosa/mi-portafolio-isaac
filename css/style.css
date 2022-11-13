@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+.contenedor {
+    background-color: rgb(188, 218, 218);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*@media (max-width: 100px){ 
+    .cont-caja-1 {
+        height: 300px;
+        flex-direction: column;
+
+    }
+}*/
+.caja-1 {
+    width:100% ;
+    height: 85px;
+    align-items: center;
+    display: flex;
+    /*justify-content: flex-end;*/
+    background-color: #55A0AA;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(13,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2355A0AA'/%3E%3Cstop offset='1' stop-color='%231689FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%231BFFF5' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%231BFFF5' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%231BFFF5' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%231BFFF5' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.33'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+.cont-caja-1 li{
+    list-style-type: none;
+    display: inline-flex;
+    margin: 80px;
+    font-size: 20px;
+}
+.botones-caja-1 {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.botones-caja-1:hover {
+color: rgb(240, 241, 248);
+transform: scale(1.2);
+transition: all 0.3;
+}
+.link-botones {
+    text-decoration: none;
+}
+.pulpo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 60px;
+}
+.pulpo:hover {
+    transform: scale(1.1);
+    transition: all 0.3;
+}
+.caja-2 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+.foto-perfil {
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: ;
+}
+.ele {
+margin-left: 50px;
+}
+.ola {
+    color: rgb(109, 88, 226);
+    font-size: 25px;
+    margin: auto;
+    
+}
+.isaac {
+    font-size: 30px;
+    color: blue;
+}
+.estudios {
+    width: auto;
+    background-color: gray;
+    height: 650px;
+}
+.caja-habilidades {
+width: 100%;
+background-color: antiquewhite;
+height: 650px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+}
+.hab {
+    font-size: 70px;
+}
+.hab:hover {
+    color: rgb(127, 151, 151);
+    cursor: pointer;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    filter: drop-shadow( 0 0 9px 
+    #000);
+}
+.logo:hover {
+    transform: scale(1.3);
+    transition: all 0.3;
+}
+.caja-contato {
+width: 100%;
+height: 650px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.redes-sociales {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    filter: drop-shadow( 0 0 9px rgb(68, 2, 2));
+}
+.redes-sociales:hover {
+    transform: scale(1.3);
+    transition: all 0.3;
+}
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    font-size: 80px;
+}
+.contato:hover {
+    color: rgb(104, 89, 84);
+}
+
+
+
+
