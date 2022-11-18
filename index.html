@@ -6,49 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="extra/pulpo.jpg">
+     
 </head>
 <body>
-    <header class="contenedor">
-        <div class="caja-1">
-            <img class="pulpo" src="extra/pulpo.jpg" alt="">
-            <ul class="cont-caja-1">
-                <a href="#estudios" class="link-botones"><li><button class="botones-caja-1">Estudios</button></li></a>
-                <a href="#habilidades" class="link-botones"><li><button class="botones-caja-1">Habilidades</button></li></a>
-                <a href="#contato" class="link-botones"><li><button class="botones-caja-1">Contato</button></li></a>
-            </ul>
-            </div>
-            <div class="caja-2">
-                <img class="foto-perfil" src="extra/foto-perfil.jpg" alt="">
-            <div>
-                <p class="ola ele">Ola, eu sou:</p>
-                <p class="isaac ele">Isaac La Rosa</p>
-                <p class="front ele">Front-End Developer</p>
-                <p class="descr ele">Desenvolvimento Web. Programação de sites Responsivos</p>
-            </div>
-            </div>
-            <div id="estudios" class="estudios"></div>
-            
-            <div id="habilidades" class="caja-habilidades">
-                <p class="hab">Habilidades</p>
-            <div>
-                <img class="icono-html logo" src="extra/html-5.png" alt=""> 
-                <img class="icono-css logo" src="extra/css.png" alt="">
-                <img class="icono-js logo" src="extra/javascript.png" alt="">
-                <img class="icono-git logo" src="extra/icono-git.png" alt="">
-                <img class="icono-github logo" src="extra/icono-github.png" alt="">
-                <img class="icono-api logo" src="extra/icono-api.png" alt="">
-            </div>
-            </div>
-            
+    <header>
+        <img class="pulpo" src="extra/pulpo.jpg" alt="">
+        <h2 class="logo-header">Portafolio</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="#">Estudios</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section class="caja-2"><img class="foto-perfil" src="extra/foto-perfil.jpg" alt="">
+    <div class="caracte">
+            <p class="ola ele">Ola, eu sou:</p>
+            <p class="isaac ele">Isaac La Rosa</p>
+            <p class="front ele">Front-End Developer</p>
+            <p class="descr ele">Desenvolvimento Web. Programação de sites Responsivos</p>
+    </div>
+    </section>
+            <!--<div id="estudios" class="estudios"></div>-->
+
+    <section id="habilidades" class="caja-habilidades">
+            <p class="hab">Habilidades</p>
+    <div>
+            <img class="icono-html logo" src="extra/html-5.png" alt=""> 
+            <img class="icono-css logo" src="extra/css.png" alt="">
+            <img class="icono-js logo" src="extra/javascript.png" alt="">
+            <img class="icono-git logo" src="extra/icono-git.png" alt="">
+            <img class="icono-github logo" src="extra/icono-github.png" alt="">
+            <img class="icono-api logo" src="extra/icono-api.png" alt="">
+            <img class="icono-react logo" src="extra/logo-react.png" alt="">
+    </div>
+    </section>
+
             <div class="caja-contato">
                 <p id="contato" class="contato">Contato</p>
             <div class="log">
-                <a href="#"><img class="redes-sociales" src="extra/icono-facebook.png" alt=""></a>
-                <a href=" https://www.instagram.com/invites/contact/?i=1uab0gxkc31wx&utm_content=1egb3tc" target="_blank"><img class="redes-sociales" src="extra/icono-instagram-r.png" alt=""></a>
-                <a href=" https://wa.me/message/7T27W4STU4VSI1" target="_blank"><img class="redes-sociales" src="extra/icono-whatsapp.png" alt=""></a>
-                <a href="https://www.linkedin.com/psettings/invite-receive" target="_blank"><img class="redes-sociales" src="extra/icono-in-r.png" alt=""></a>
+                <a href="#"><img class="redes-sociales" src="extra/logo-facebook.png" alt=""></a>
+
+                <a href=" https://www.instagram.com/invites/contact/?i=1uab0gxkc31wx&utm_content=1egb3tc" target="_blank"><img class="redes-sociales" src="extra/logo-instagran.png" alt=""></a>
+
+                <a href=" https://wa.me/message/7T27W4STU4VSI1" target="_blank"><img class="redes-sociales" src="extra/logo-whatsapp-3.png" alt=""></a>
+
+                <a href="https://www.linkedin.com/psettings/invite-receive" target="_blank"><img class="redes-sociales" src="extra/logo-linkedin-2.png" alt=""></a>
+
+                <a href="https://github.com/Isaac-La-Rosa" target="_blank"><img class="redes-sociales" src="extra/logo-github-2.png" alt=""></a>
+
             </div>
             </div>
-    </header>
 </body>
 </html>

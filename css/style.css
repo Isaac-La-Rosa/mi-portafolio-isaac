@@ -1,85 +1,82 @@
-
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, 
+sans-serif;
+box-sizing: border-box;
 }
-.contenedor {
-    background-color: rgb(188, 218, 218);
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-/*@media (max-width: 100px){ 
-    .cont-caja-1 {
-        height: 300px;
-        flex-direction: column;
+/*header*/
 
-    }
-}*/
-.caja-1 {
-    width:100% ;
-    height: 85px;
-    align-items: center;
+header {
+    width: 100%;
+    height: 15vh;
+    background: #5bd6c2;
+    color: rgb(243, 236, 236);
     display: flex;
-    /*justify-content: flex-end;*/
-    background-color: #55A0AA;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(13,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2355A0AA'/%3E%3Cstop offset='1' stop-color='%231689FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%231BFFF5' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%231BFFF5' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%231BFFF5' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%231BFFF5' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.33'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+    justify-content:space-between;
+    align-items: center;
 }
-.cont-caja-1 li{
-    list-style-type: none;
-    display: inline-flex;
-    margin: 80px;
-    font-size: 20px;
-}
-.botones-caja-1 {
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-}
-.botones-caja-1:hover {
-color: rgb(240, 241, 248);
-transform: scale(1.2);
-transition: all 0.3;
-}
-.link-botones {
-    text-decoration: none;
+.logo-header {
+    font-size: 50px;
+    color: #0f1110;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    letter-spacing: 10px;
 }
 .pulpo {
-    width: 60px;
-    height: 60px;
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     cursor: pointer;
-    margin-right: auto;
-    margin-left: 60px;
+
 }
-.pulpo:hover {
-    transform: scale(1.1);
-    transition: all 0.3;
+.menu a {
+    color: rgb(17, 16, 16);
+    text-transform: none;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: 20;
+    letter-spacing: 2px;
+}
+.mostrar-menu {
+}
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu {
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: #e5f0ea;
+}
+#check {
+    display: none;
 }
 .caja-2 {
     width: 100%;
-    height: 550px;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    justify-content:center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    
 }
 .foto-perfil {
+    align-items: center;
     width: 250px;
     height: 300px;
     border-radius: 50%;
-    margin-right: ;
 }
 .ele {
-margin-left: 50px;
+    margin-left: 50px;
 }
 .ola {
     color: rgb(109, 88, 226);
@@ -91,67 +88,138 @@ margin-left: 50px;
     font-size: 30px;
     color: blue;
 }
-.estudios {
-    width: auto;
-    background-color: gray;
-    height: 650px;
-}
 .caja-habilidades {
-width: 100%;
-background-color: antiquewhite;
-height: 650px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-align-items: center;
+    width: 100%;
+    background-color: rgb(243, 215,178);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .hab {
-    font-size: 70px;
+    font-size: 60px;
+    padding: 10px 21%;
 }
 .hab:hover {
     color: rgb(127, 151, 151);
     cursor: pointer;
 }
 .logo {
-    width: 150px;
-    height: 150px;
-    margin: 30px;
-    filter: drop-shadow( 0 0 9px 
-    #000);
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    filter: drop-shadow( 0 0 9px rgb(68, 2, 2));
 }
 .logo:hover {
     transform: scale(1.3);
-    transition: all 0.3;
+    transition: all 0.3;   
 }
 .caja-contato {
-width: 100%;
-height: 650px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .redes-sociales {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 50px;
-    filter: drop-shadow( 0 0 9px rgb(68, 2, 2));
+    filter: drop-shadow( 0 0 9px
+    rgb(68, 2, 2));
 }
 .redes-sociales:hover {
     transform: scale(1.3);
     transition: all 0.3;
 }
-.contato {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    font-size: 80px;
+.contato { 
+    font-size: 70px;
 }
 .contato:hover {
-    color: rgb(104, 89, 84);
+    color: rgb(214, 64, 14);
 }
+
+@media(max-width: 765px){
+    /*header*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #326abe;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.9s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+
+    }
+    .caja-2 {
+        display: block;
+        text-align: center;
+    }
+    .logo-header {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .pulpo {
+        margin-left: 0px;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .caja-habilidades {
+        text-align: center;
+    }
+    .hab {
+        font-size: 40px;
+        background-color: #0f1110;
+        color: #326abe;
+    }
+    .caja-contato {
+        display: block;
+        text-align: center;
+        background-color: darkseagreen;
+    }
+    .contato {
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+        color: #326abe;
+        background-color: #0f1110;
+    }
+    .redes-sociales {
+        width: 80px;
+        height: 80px;
+    }
+}
+/*.estudios {
+    width: auto;
+    background-color: gray;
+    height: 650px;
+}
+*/
+
 
 
 
