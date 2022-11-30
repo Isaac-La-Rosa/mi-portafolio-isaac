@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" href="extra/pulpo.jpg">
-     
 </head>
 <body>
+    <script src="main.js"></script>
     <header>
         <img class="pulpo" src="extra/pulpo.jpg" alt="">
         <h2 class="logo-header">Portafolio</h2>
@@ -50,8 +50,21 @@
     </div>
     </section>
 
-            <div class="caja-contato">
-                <p id="contato" class="contato">Contato</p>
+    <div class="caja-contato">
+            <p id="contato" class="contato">Contacto</p>
+        <section class="contact">
+            <form id="form" action="" class="form" name="form">
+                <h3 class="tag"><span class="contate-me">Contate-me</span></h3>
+                <label for="nome">Nome <span>*</span></label>
+                <input name="nome" type="text" id="nome"placeholder="Isaac">
+                <label for="email">Email <span>*</span></label>
+                <input name="email" type="text" id="email" placeholder="Isaac@gmail.com">
+                <label for="message">Mensagem <span>*</span></label>
+                <textarea name="message" id="comentarios"cols="30"rows="5"></textarea>
+                <button type="submit" class="btn-enviar 
+                full">Enviar Mensagem</button>
+            </form>
+        </section>
             <div class="log">
                 <a href="#"><img class="redes-sociales" src="extra/logo-facebook.png" alt=""></a>
 
@@ -62,8 +75,8 @@
                 <a href="https://www.linkedin.com/psettings/invite-receive" target="_blank"><img class="redes-sociales" src="extra/logo-linkedin-2.png" alt=""></a>
 
                 <a href="https://github.com/Isaac-La-Rosa" target="_blank"><img class="redes-sociales" src="extra/logo-github-2.png" alt=""></a>
-
-            </div>
-            </div>
+        </div>
+    </div>
+    <script src="contain.js/index.js"></script>
 </body>
 </html>

@@ -3,10 +3,9 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, 
 sans-serif;
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /*header*/
-
 header {
     width: 100%;
     height: 15vh;
@@ -30,7 +29,6 @@ header {
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
-
 }
 .menu a {
     color: rgb(17, 16, 16);
@@ -42,14 +40,14 @@ header {
     font-weight: 20;
     letter-spacing: 2px;
 }
-.mostrar-menu {
-}
+/*mostrar menu/esconder menu*/
 .mostrar-menu,
 .esconder-menu {
     font-size: 30px;
     cursor: pointer;
     display: none;
     transition: 0.4s;
+    color: #0f1110;
 }
 .mostrar-menu {
     order: 1;
@@ -57,11 +55,13 @@ header {
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
-    color: #e5f0ea;
+    color: #f2f8f5;
+
 }
 #check {
     display: none;
 }
+/*broco-2*/
 .caja-2 {
     width: 100%;
     height: 100vh;
@@ -88,6 +88,7 @@ header {
     font-size: 30px;
     color: blue;
 }
+/*broco-3*/
 .caja-habilidades {
     width: 100%;
     background-color: rgb(243, 215,178);
@@ -98,7 +99,7 @@ header {
     flex-wrap: wrap;
 }
 .hab {
-    font-size: 60px;
+    font-size: 70px;
     padding: 10px 21%;
 }
 .hab:hover {
@@ -115,19 +116,20 @@ header {
     transform: scale(1.3);
     transition: all 0.3;   
 }
+/*broco-4*/
 .caja-contato {
+    display: flex;
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items:center;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    align-items: center;
 }
 .redes-sociales {
-    width: 100px;
-    height: 100px;
-    margin: 50px;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 30px;
     filter: drop-shadow( 0 0 9px
     rgb(68, 2, 2));
 }
@@ -136,38 +138,88 @@ header {
     transition: all 0.3;
 }
 .contato { 
-    font-size: 70px;
+    font-size: 0px;
 }
 .contato:hover {
     color: rgb(214, 64, 14);
 }
+     /*Formulario*/
+.form {
+    max-inline-size: 300px;
+    border-style: solid;
+    border-radius: 20px;
+}
+.tag {
+    font-size: 2em;
+    position: relative;
+    margin-left: 50px;
+}
+.form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+}
+.form label span {
+    color: #DA1414;
+}
+.form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+}
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+}
+input::-webkit-input-placeholde {
+    color: #0F0A0A88;
+}
+.btn-enviar {
+    background-color: rgb(37, 58, 247);
+    color: #fff;
+    font-size: 1em;
+    width: 10em;
+    margin: 10px 70px;
+    border-radius: 10px;
+    height: 30px;
+}
+  
 
 @media(max-width: 765px){
-    /*header*/
+
+      /*header*/
     .mostrar-menu,
     .esconder-menu{
         display: block;
     }
+    .mostrar-menu {
+        margin-right: 20px;
+    }
     .menu {
         position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #326abe;
+        width: 30%;
+        height: 30vh;
+        background-color:#6698e4;
         right: -100%;
         top: 0;
-        text-align: center;
-        padding: 100px 0px;
+        text-align: ;
+        padding: 50px 0px;
         z-index: 100;
         transition: 0.9s;
+        border-radius: 10px;
     }
     .menu a{
         display: block;
-        padding: 20px;
+        padding: 10px;
     }
     .esconder-menu {
         position: absolute;
-        top: 40px;
-        right: 40px;
+        top: 10px;
+        right: 20px;
     }
     #check:checked ~ .menu{
         right: 0;
@@ -176,6 +228,7 @@ header {
     .caja-2 {
         display: block;
         text-align: center;
+        margin-top: 100px;
     }
     .logo-header {
         font-size: 30px;
@@ -190,6 +243,7 @@ header {
     }
     .caja-habilidades {
         text-align: center;
+        display: block;
     }
     .hab {
         font-size: 40px;
@@ -197,28 +251,47 @@ header {
         color: #326abe;
     }
     .caja-contato {
+
         display: block;
-        text-align: center;
         background-color: darkseagreen;
+        height: 100vh;
+        justify-content: center;
     }
     .contato {
-        font-size: 50px;
+        font-size: 40px;
+        display: flex;
         align-items: center;
         justify-content: center;
         color: #326abe;
         background-color: #0f1110;
+        width: 100%;
     }
     .redes-sociales {
-        width: 80px;
-        height: 80px;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+    /*Formulario*/
+    .form {
+        position: absolute;
+        margin-top: -160px;
+        margin-left: 80px;
+        width: 250px;
+        height: 500px;
+    }
+    .contate-me {
+        font-size: 25px;
+    }
+    .btn-enviar {
+       margin-left: 40px ;
+       height: 35px; 
     }
 }
 /*.estudios {
     width: auto;
     background-color: gray;
     height: 650px;
-}
-*/
+}*/
 
 
 
