@@ -187,7 +187,33 @@ input::-webkit-input-placeholde {
     border-radius: 10px;
     height: 30px;
 }
-  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.api {
+    display: flex;
+    align-items: ;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    word-break: break-all;
+    height: 100vh;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+li span {
+    margin: 10px;
+}
+h2 {
+    margin: 20px auto;
+}
+
 
 @media(max-width: 765px){
 
@@ -238,24 +264,22 @@ input::-webkit-input-placeholde {
         margin-left: 0px;
     }
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     .caja-habilidades {
         text-align: center;
-        display: block;
     }
     .hab {
         font-size: 40px;
         background-color: #0f1110;
         color: #326abe;
+        width: 100%;
+        margin-bottom: 20%;
     }
     .caja-contato {
-
         display: block;
         background-color: darkseagreen;
-        height: 100vh;
-        justify-content: center;
     }
     .contato {
         font-size: 40px;
@@ -267,23 +291,23 @@ input::-webkit-input-placeholde {
         width: 100%;
     }
     .redes-sociales {
-        width: 1px;
-        height: 1px;
-        opacity: 0;
+        display: none;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        margin-top: 20%;
+
     }
     /*Formulario*/
     .form {
-        position: absolute;
-        margin-top: -160px;
-        margin-left: 80px;
-        width: 250px;
-        height: 500px;
+        /*width: 250px;
+        height: 500px;*/
     }
     .contate-me {
         font-size: 25px;
     }
     .btn-enviar {
-       margin-left: 40px ;
        height: 35px; 
     }
 }
