@@ -42,57 +42,24 @@ function validarForm(){
         comentarios.focus();
         return false;
        }
-  
        return true;
     }
-
     // asociacion del boton enviar con el formulario en html//
-    window.onload = function()
-    { 
+    window.onload = function() { 
       var formulario = document.getElementById("form");
       formulario.onsubmit = validarForm;
     }
+
+
     /*envio de formulario*/
-    const $form = document.getElementById('form')
-    const $buttonMailto = document.getElementById('aprob')
+    //const $form = document.getElementById('form')
+    //const $buttonMailto = document.getElementById('aprob')
 
-    $form.addEventListener('submit', handleSubmit)
+    //$form.addEventListener('submit', handleSubmit)
 
-    function handleSubmit(event) {
+    /*function handleSubmit(event) {
     event.preventDefault()
     const form = new FormData(this)
     $buttonMailto.setAttribute('href', `mailto:larosaisaac2@gmail.com?subject=nombre' ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
   $buttonMailto.click()
-}
-
-const ul = document.querySelector('ul')
-
-function getApiGitHub() {
-fetch('https://api.github.com/users/Isaac-La-Rosa/repos')
-.then(async res => {
-
-    if(!res.ok) {
-        throw new Error(res.status)
-    }
-
-    var data = await res.json()
-
-    data.map(item => {
-        let li = document.createElement('li')
-
-        li.innerHTML = `
-        <strong>${item.name.toUpperCase()}</strong>
-        <span>URL: ${item.url}</span>
-        <span>Data Criação: 
-            ${Intl.DateTimeFormat('pt-BR')
-            .format(new Date(item.created_at))}
-        </span>
-        `
-        ul.appendChild(li)
-        
-    })
-})
-
-}
-
-getApiGitHub()
+}*/

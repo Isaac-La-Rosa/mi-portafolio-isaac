@@ -143,7 +143,8 @@ header {
 .contato:hover {
     color: rgb(214, 64, 14);
 }
-     /*Formulario*/
+
+/*Formulario*/
 .form {
     max-inline-size: 300px;
     border-style: solid;
@@ -186,34 +187,74 @@ input::-webkit-input-placeholde {
     margin: 10px 70px;
     border-radius: 10px;
     height: 30px;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.api {
-    display: flex;
-    align-items: ;
-    justify-content: center;
-    background-color: black;
-    color: #fff;
-    word-break: break-all;
-    height: 100vh;
-}
-li {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-}
-li span {
-    margin: 10px;
-}
-h2 {
-    margin: 20px auto;
+    cursor: pointer;
 }
 
+/*github api*/
+.body {
+    background-color: #0d1117;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+a {
+    text-decoration: none;
+    color: #8b949e;
+}
+.content-main {
+    margin: 30px;
+}
+.content-main .project {
+    border: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 6px;
+    margin: 20px;
+}
+.content-main .project div {
+    display: flex;
+    justify-content: space-between;
+}
+.content-main .project div .date-create {
+    color: #8b949e;
+    border: 1px solid #8b949e;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+.content-main .project div .title {
+    color: #47a6f0;
+}
+.content-main .project .language .circle {
+    background-color: #47a6f0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid #30363d;
+    border-radius: 50%;
+}
+
+/* boton saber mais */
+.saber-mais {
+    font-size: 22px;
+    position: absolute;
+    margin: 200px 150px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+    border-style: solid;
+    background-color: #77f377;
+    cursor: pointer;
+}
+.saber-mais:hover {
+    background-color: #7ac57a;
+    color: #fff;
+}
 
 @media(max-width: 765px){
 
@@ -296,28 +337,21 @@ h2 {
     .contact {
         display: flex;
         justify-content: center;
-        margin-top: 20%;
+        margin-top: 10%;
 
     }
     /*Formulario*/
-    .form {
-        /*width: 250px;
-        height: 500px;*/
-    }
     .contate-me {
         font-size: 25px;
     }
     .btn-enviar {
-       height: 35px; 
+       height: 35px;
+       display: flex;
+       justify-content: center;
     }
+    .saber-mais {
+        margin: 20px 130px;
+        border-color: rgb(224, 248, 177);
+    }
+
 }
-/*.estudios {
-    width: auto;
-    background-color: gray;
-    height: 650px;
-}*/
-
-
-
-
-
