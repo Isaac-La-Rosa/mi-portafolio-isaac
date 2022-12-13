@@ -255,6 +255,23 @@ a {
     background-color: #7ac57a;
     color: #fff;
 }
+/* boton cadastrese */
+.cadastrese {
+    width: 100px;
+    height: 50px;
+    border-style: solid;
+    background-color: #77f377;
+    border-radius: 10%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 22px;
+    margin: 300px 150px;
+    width: 200px;
+    height: 50px;
+}
+.cadastrese:hover {
+    background-color: #7ac57a;
+}
 
 @media(max-width: 765px){
 
@@ -273,7 +290,6 @@ a {
         background-color:#6698e4;
         right: -100%;
         top: 0;
-        text-align: ;
         padding: 50px 0px;
         z-index: 100;
         transition: 0.9s;
