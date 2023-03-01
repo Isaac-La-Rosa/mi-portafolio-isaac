@@ -8,20 +8,30 @@ sans-serif;
 /*header*/
 header {
     width: 100%;
-    height: 15vh;
-    background: #5bd6c2;
+    height: 12vh;
     color: rgb(243, 236, 236);
     display: flex;
     justify-content:space-between;
     align-items: center;
+    background: linear-gradient(to right, #043941da 50px, #051036);  
+    position: fixed;
+    z-index: 100;
 }
 .logo-header {
-    font-size: 50px;
-    color: #0f1110;
+    font-size: 20px;
+    color: #fbfdfc;
     font-weight: 100;
     display: flex;
     align-items: center;
     letter-spacing: 10px;
+    filter: drop-shadow( 0 0 9px rgb(15, 1, 1));
+}
+.logo-header {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    color: #535860;
 }
 .pulpo {
     margin-left: 50px;
@@ -29,9 +39,10 @@ header {
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
+    filter: drop-shadow( 0 0 2px rgb(10, 2, 2));
 }
 .menu a {
-    color: rgb(17, 16, 16);
+    color: rgb(249, 244, 244);
     text-transform: none;
     text-decoration: none;
     padding: 0 20px;
@@ -68,30 +79,35 @@ header {
     display: flex;
     justify-content:center;
     align-items: center;
+    background-image: url(/extra/fondo-1.jpeg);
+    background-size:100%;
+    background-position:center;
 }
 .foto-perfil {
     align-items: center;
-    width: 250px;
+    width: 300px;
     height: 300px;
     border-radius: 50%;
+    filter: drop-shadow( 0 0 2px rgb(10, 0, 0));
 }
 .ele {
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .ola {
-    color: rgb(109, 88, 226);
-    font-size: 25px;
+    color: #fff;
+    filter: drop-shadow( 0 0 5px rgb(9, 51, 149));
+    font-size: 45px;
     margin: auto;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .isaac {
-    font-size: 30px;
-    color: blue;
+    font-size: 20px;
+    color: rgb(32, 92, 136);
 }
 /*broco-3*/
 .caja-habilidades {
     width: 100%;
-    background-color: rgb(243, 215,178);
+    background-color: #000;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -99,22 +115,25 @@ header {
     flex-wrap: wrap;
 }
 .hab {
-    font-size: 70px;
-    padding: 10px 21%;
+    font-size: 60px;
+    color: #95a8ad;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    filter: drop-shadow( 0 0 5px rgb(8, 13, 104));
 }
 .hab:hover {
-    color: rgb(127, 151, 151);
+    color: rgb(12, 13, 13);
     cursor: pointer;
 }
 .logo {
     width: 100px;
     height: 100px;
     margin: 40px;
-    filter: drop-shadow( 0 0 9px rgb(68, 2, 2));
+    filter: drop-shadow( 0 0 5px rgb(32, 53, 124));
 }
 .logo:hover {
     transform: scale(1.3);
-    transition: all 0.3;   
+    transition: all 0.3;  
+    font-size: 30px; 
 }
 /*broco-4*/
 .caja-contato {
@@ -123,15 +142,15 @@ header {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to top, #073b42 20px, #000);  
 }
 .redes-sociales {
     display: flex;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin: 30px;
-    filter: drop-shadow( 0 0 9px
-    rgb(68, 2, 2));
+    filter: drop-shadow( 0 0 9px rgb(1, 13, 17));
 }
 .redes-sociales:hover {
     transform: scale(1.3);
@@ -149,6 +168,9 @@ header {
     max-inline-size: 300px;
     border-style: solid;
     border-radius: 20px;
+    color: #1c6065;
+    filter: drop-shadow( 0 0 9px rgb(1, 10, 22));
+    font-size: 14px;
 }
 .tag {
     font-size: 2em;
@@ -171,16 +193,17 @@ header {
     padding: .8em;
     border-radius: .5em;
     border: 1px solid #858C94;
+    background: #d6e0e0;
 }
 .form textarea {
     margin-block-end: 2em;
     font-family: inherit;
 }
 input::-webkit-input-placeholde {
-    color: #0F0A0A88;
+    color: #eddada88;
 }
 .btn-enviar {
-    background-color: rgb(37, 58, 247);
+    background: linear-gradient(to right, #0d1112 50px, #264854);  
     color: #fff;
     font-size: 1em;
     width: 10em;
@@ -198,7 +221,9 @@ input::-webkit-input-placeholde {
 h1 {
     text-align: center;
     margin: 20px auto;
+    font-size: 25px;
 }
+
 a {
     text-decoration: none;
     color: #8b949e;
@@ -246,31 +271,17 @@ a {
     margin: 200px 150px;
     width: 150px;
     height: 50px;
-    border-radius: 10%;
+    border-radius: 5%;
     border-style: solid;
-    background-color: #77f377;
+    background-color: #1760ae;
+    color: #fff;
     cursor: pointer;
+    filter: drop-shadow( 0 0 3px rgb(1, 8, 17));
+    background: linear-gradient(to right, #1b525a 50px, #010a12);  
 }
 .saber-mais:hover {
     background-color: #7ac57a;
     color: #fff;
-}
-/* boton cadastrese */
-.cadastrese {
-    width: 100px;
-    height: 50px;
-    border-style: solid;
-    background-color: #77f377;
-    border-radius: 10%;
-    cursor: pointer;
-    position: absolute;
-    font-size: 22px;
-    margin: 300px 150px;
-    width: 200px;
-    height: 50px;
-}
-.cadastrese:hover {
-    background-color: #7ac57a;
 }
 
 @media(max-width: 765px){
@@ -353,8 +364,7 @@ a {
     .contact {
         display: flex;
         justify-content: center;
-        margin-top: 10%;
-
+        margin-top: 50px;
     }
     /*Formulario*/
     .contate-me {
@@ -366,8 +376,8 @@ a {
        justify-content: center;
     }
     .saber-mais {
-        margin: 20px 130px;
-        border-color: rgb(224, 248, 177);
+        border-color: rgb(148, 218, 10);
+        margin-top: 50px;
+        margin-left: 130px;
     }
-
 }
