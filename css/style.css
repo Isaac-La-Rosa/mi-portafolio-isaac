@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, 
-sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
 /*header*/
@@ -17,21 +16,18 @@ header {
     position: fixed;
     z-index: 100;
 }
-.logo-header {
+p {
     font-size: 20px;
+    color: #d6e0e0;
+}
+.logo-header {
+    font-size: 30px;
     color: #fbfdfc;
     font-weight: 100;
     display: flex;
     align-items: center;
     letter-spacing: 10px;
-    filter: drop-shadow( 0 0 9px rgb(15, 1, 1));
-}
-.logo-header {
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-p{
-    color: #535860;
+    filter: drop-shadow( 0 0 9px rgb(107, 100, 100));
 }
 .pulpo {
     margin-left: 50px;
@@ -50,6 +46,8 @@ p{
     font-size: 20px;
     font-weight: 20;
     letter-spacing: 2px;
+    filter: drop-shadow( 0 0 5px rgb(217, 218, 230));
+    letter-spacing: 5px;
 }
 /*mostrar menu/esconder menu*/
 .mostrar-menu,
@@ -58,7 +56,7 @@ p{
     cursor: pointer;
     display: none;
     transition: 0.4s;
-    color: #0f1110;
+    color: #fff;
 }
 .mostrar-menu {
     order: 1;
@@ -66,43 +64,82 @@ p{
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
-    color: #f2f8f5;
-
+    color: rgb(0, 62, 220);
+    transform: scale(1.3);
+    transition: all 0.3;
 }
 #check {
     display: none;
+}
+/*broco-1*/
+.caja-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/extra/playa-16.jpg);
+    /* background-size:100%; */
+    background-position:center;
+}
+.foto-perfil {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: drop-shadow( 0 0 2px rgb(10, 0, 0));
+}
+.caracte {
+
+}
+.ele {
+    margin-left: 100px;
+}
+.ola {
+    color: hwb(267 89% 8%);
+    filter: drop-shadow( 0 0 5px rgb(9, 51, 149));
+    font-size: 45px;
+    margin: auto;
+}
+.isaac {
+    font-size: 40px;
+    color: rgb(134, 188, 226);
+}
+.descr {
+    color: #d8e9d3;
 }
 /*broco-2*/
 .caja-2 {
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    background-image: url(/extra/fondo-1.jpeg);
+    background-color: #000;
+    background-image: url(/extra/playa-15.jpg);
     background-size:100%;
     background-position:center;
 }
-.foto-perfil {
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    filter: drop-shadow( 0 0 2px rgb(10, 0, 0));
+.estudos{
+    position: relative;
+    left: 450px;
+    top: 100px;
+    color: #95a8ad;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    filter: drop-shadow( 0 0 5px rgb(217, 218, 230));
+    width: 130px;
+    height: 20px;
+    letter-spacing: 4px;
 }
-.ele {
-    margin-left: 10px;
+.estudos:hover {
+    color: rgb(31, 39, 39);
+    cursor: pointer;
 }
-.ola {
-    color: #fff;
-    filter: drop-shadow( 0 0 5px rgb(9, 51, 149));
-    font-size: 45px;
-    margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.isaac {
+.encino{
+    color: white;
     font-size: 20px;
-    color: rgb(32, 92, 136);
+    position: relative;
+    left: 150px;
+    top: 200px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    width: 1000px;
 }
 /*broco-3*/
 .caja-habilidades {
@@ -113,39 +150,57 @@ p{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-image: url(/extra/pez-1.jpg);
+    background-size:100%;
+    background-position:center;
 }
 .hab {
     font-size: 60px;
     color: #95a8ad;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    filter: drop-shadow( 0 0 5px rgb(8, 13, 104));
+    filter: drop-shadow( 0 0 5px rgb(217, 218, 230));
+    letter-spacing: 4px;
 }
 .hab:hover {
     color: rgb(12, 13, 13);
     cursor: pointer;
 }
-.logo {
-    width: 100px;
-    height: 100px;
-    margin: 40px;
-    filter: drop-shadow( 0 0 5px rgb(32, 53, 124));
+/* broco-4 projetos */
+.projetos {
+    width: 100%;
+    height: 85vh;
+    background-image: url(/extra/playa.webp);
+    background-position:center;
 }
-.logo:hover {
-    transform: scale(1.3);
-    transition: all 0.3;  
-    font-size: 30px; 
+.pirata {
+    position: relative;
+    top: 150px;
+    width: 350px;
+    left: 50px;
 }
-/*broco-4*/
+.projet {
+    top: 100px;
+    width: 210px;
+    position: relative;
+    left: 550px;
+    font-size: 50px;
+    color: #fff;
+    filter: drop-shadow( 0 0 5px rgb(217, 218, 230));
+    letter-spacing: 4px;
+}
+.projet:hover {
+    color: rgb(12, 13, 13);
+    cursor: pointer;
+}
+/*broco-5 Contato*/
 .caja-contato {
     display: flex;
     width: 100%;
-    height: 100vh;
-    justify-content: center;
+    height: 15vh;
     align-items: center;
     background: linear-gradient(to top, #073b42 20px, #000);  
 }
 .redes-sociales {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     width: 40px;
     height: 40px;
@@ -156,72 +211,38 @@ p{
     transform: scale(1.3);
     transition: all 0.3;
 }
-.contato { 
-    font-size: 0px;
-}
-.contato:hover {
-    color: rgb(214, 64, 14);
-}
-
-/*Formulario*/
-.form {
-    max-inline-size: 300px;
-    border-style: solid;
-    border-radius: 20px;
-    color: #1c6065;
-    filter: drop-shadow( 0 0 9px rgb(1, 10, 22));
-    font-size: 14px;
-}
-.tag {
-    font-size: 2em;
+/* boton saber mais */
+.saber-mais {
+    font-size: 15px;
     position: relative;
-    margin-left: 50px;
-}
-.form label {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: .5em;
-    padding-inline-start: .5em;
-}
-.form label span {
-    color: #DA1414;
-}
-.form input, .form textarea {
-    box-sizing: border-box;
-    width: 100%;
-    font-size: 1rem;
-    padding: .8em;
-    border-radius: .5em;
-    border: 1px solid #858C94;
-    background: #d6e0e0;
-}
-.form textarea {
-    margin-block-end: 2em;
-    font-family: inherit;
-}
-input::-webkit-input-placeholde {
-    color: #eddada88;
-}
-.btn-enviar {
-    background: linear-gradient(to right, #0d1112 50px, #264854);  
+    left: 600px;
+    top: 10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 15%;
+    border-style: solid;
+    background-color: #1760ae;
     color: #fff;
-    font-size: 1em;
-    width: 10em;
-    margin: 10px 70px;
-    border-radius: 10px;
-    height: 30px;
     cursor: pointer;
+    filter: drop-shadow( 0 0 3px rgb(1, 8, 17));
+    background: linear-gradient(to right, #1b525a 50px, #010a12);  
+}
+.saber-mais:hover {
+    background-color: #065306;
+    color: #10f148;
 }
 
-/*github api*/
+/*github*/
 .body {
-    background-color: #0d1117;
+    background-image: url(/extra/fondo-1.jpeg);
+    background-size:100%;
     color: #fff;
 }
 h1 {
     text-align: center;
     margin: 20px auto;
-    font-size: 25px;
+    font-size: 45px;
+    letter-spacing: 5px;
 }
 
 a {
@@ -263,28 +284,52 @@ a {
     border: 1px solid #30363d;
     border-radius: 50%;
 }
+@media(max-width: 980px){
+          /*header*/
+          .mostrar-menu,
+          .esconder-menu{
+              display: block;
+          }
+          .mostrar-menu {
+              margin-right: 20px;
+          }
+          .menu {
+              position: fixed;
+              width: 30%;
+              height: 40vh;
+              background-color:#6698e4;
+              right: -100%;
+              top: 0;
+              padding: 50px 0px;
+              z-index: 100;
+              transition: 0.9s;
+              border-radius: 10px;
+          }
+          .menu a{
+              display: block;
+              padding: 10px;
+          }
+          .esconder-menu {
+              position: absolute;
+              top: 10px;
+              right: 20px;
+          }
+          #check:checked ~ .menu{
+              right: 0;
+          }
+          .saber-mais {
+            left: 260px;
+    }
+    .encino {
+        font-size: 15px;
+        width: 700px;
+    }
+    .projet {
+        left: 370px;
+    }
+        }
 
-/* boton saber mais */
-.saber-mais {
-    font-size: 22px;
-    position: absolute;
-    margin: 200px 150px;
-    width: 150px;
-    height: 50px;
-    border-radius: 5%;
-    border-style: solid;
-    background-color: #1760ae;
-    color: #fff;
-    cursor: pointer;
-    filter: drop-shadow( 0 0 3px rgb(1, 8, 17));
-    background: linear-gradient(to right, #1b525a 50px, #010a12);  
-}
-.saber-mais:hover {
-    background-color: #7ac57a;
-    color: #fff;
-}
-
-@media(max-width: 765px){
+@media(max-width: 650px){
 
       /*header*/
     .mostrar-menu,
@@ -297,7 +342,7 @@ a {
     .menu {
         position: fixed;
         width: 30%;
-        height: 30vh;
+        height: 40vh;
         background-color:#6698e4;
         right: -100%;
         top: 0;
@@ -317,13 +362,8 @@ a {
     }
     #check:checked ~ .menu{
         right: 0;
-
     }
-    .caja-2 {
-        display: block;
-        text-align: center;
-        margin-top: 100px;
-    }
+    
     .logo-header {
         font-size: 30px;
         letter-spacing: 2px;
@@ -335,49 +375,216 @@ a {
         width: 60px;
         height: 60px;
     }
+    .caja-1 {
+        background-repeat: no-repeat;
+    }
+    .foto-perfil{
+        position: relative;
+        bottom: 80px;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    .ele {
+        position: relative;
+        /* line-height: 25px; */
+        right:100px;
+        width: 150px;
+    }
+    .ola {
+        position: relative;
+        font-size: 25px;
+        left: -35px;
+        bottom: 50px;
+    }
+    .isaac {
+        position: relative;
+        right: 100px;
+        font-size: 25px;
+        bottom: 40px;
+        color: #647deb;
+    }
+    .descr {
+        font-size: 15px;
+        right: 120px;
+        width: 250px;
+        bottom: 30px;
+    }
+    .caracte {
+        position: relative;
+        width: 70px;
+        left: 90px;
+        bottom: -50px;
+    }
+    .caja-2{
+        background-repeat: no-repeat;
+        /* height: 100vh; */
+    }
+    .encino {
+        position: relative;
+        left: 30px;
+        top: 150px;
+        font-size: 11px;
+        width: 90%;
+    }
     .caja-habilidades {
+        display: flex;
         text-align: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
     }
     .hab {
+        position: relative;
         font-size: 40px;
-        background-color: #0f1110;
-        color: #326abe;
-        width: 100%;
-        margin-bottom: 20%;
-    }
-    .caja-contato {
-        display: block;
-        background-color: darkseagreen;
-    }
-    .contato {
+        color: #f3f4f5;
+        width: 50%;
+        top: 0px;
+}
+    .estudos {
+        left: 35%;
+        top: 100px;
         font-size: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #326abe;
-        background-color: #0f1110;
-        width: 100%;
-    }
-    .redes-sociales {
-        display: none;
-    }
-    .contact {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    /*Formulario*/
-    .contate-me {
-        font-size: 25px;
-    }
-    .btn-enviar {
-       height: 35px;
-       display: flex;
-       justify-content: center;
-    }
+}
+    .projetos {
+        background-repeat: no-repeat;
+}
+    .projet {
+        position: relative;
+        width: 10px;
+        left: 35%;
+        top: 120px;
+        color: #000;
+        font-size: 40px;
+}
     .saber-mais {
-        border-color: rgb(148, 218, 10);
-        margin-top: 50px;
-        margin-left: 130px;
+        left: 80px;
+}
+    .redes-sociales {
+        margin: 10px;
+}
+}
+
+
+@media(max-width: 480px) {
+          /*header*/
+          .mostrar-menu,
+          .esconder-menu{
+              display: block;
+          }
+          .mostrar-menu {
+              margin-right: 20px;
+          }
+          .menu {
+              position: fixed;
+              width: 30%;
+              height: 40vh;
+              background-color:#6698e4;
+              right: -100%;
+              top: 0;
+              padding: 50px 0px;
+              z-index: 100;
+              transition: 0.9s;
+              border-radius: 10px;
+          }
+          .menu a{
+              display: block;
+              padding: 10px;
+          }
+          .esconder-menu {
+              position: absolute;
+              top: 10px;
+              right: 20px;
+          }
+          #check:checked ~ .menu{
+              right: 0;
+          }
+    .caja-1 {
+        background-image: url(/extra/playa-16.jpg);
+        background-repeat: no-repeat;
     }
+    .foto-perfil{
+        position: relative;
+        bottom: 50px;
+        left: 40px;
+        width: 110px;
+        height: 110px;
+    }
+    .ele {
+        position: relative;
+        line-height: 16px;
+        right:100px;
+        width: 150px;
+    }
+    .ola {
+        position: relative;
+        font-size: 20px;
+        left: -35px;
+        bottom: 50px;
+    }
+    .isaac {
+        position: relative;
+        right: 100px;
+        font-size: 20px;
+        bottom: 40px;
+        color: #647deb;
+    }
+    .descr {
+        font-size: 12px;
+        right: 100px;
+        width: 200px;
+        bottom: 30px;
+    }
+    .caracte {
+        position: relative;
+        width: 70px;
+        left: 70px;
+        bottom: -50px;
+    }
+    .caja-2{
+        background-repeat: no-repeat;
+        /* height: 100vh; */
+    }
+    .encino {
+        position: relative;
+        left: 30px;
+        top: 150px;
+        font-size: 11px;
+        width: 90%;
+    }
+    .caja-habilidades {
+        display: flex;
+        text-align: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+    .hab {
+        position: relative;
+        font-size: 40px;
+        color: #f3f4f5;
+        width: 50%;
+        top: 0px;
+}
+    .estudos {
+        left: 35%;
+        top: 100px;
+        font-size: 40px;
+}
+    .projetos {
+        background-repeat: no-repeat;
+}
+    .projet {
+        position: relative;
+        right: 100px;
+        top: 120px;
+        color: #f3ebeb;
+        font-size: 40px;
+}
+    .saber-mais {
+        left: 20px;
+}
+    .redes-sociales {
+        margin: 10px;
+}
 }

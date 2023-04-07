@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="shortcut icon" href="extra/pulpo.jpg">
 </head>
 <body>
@@ -17,65 +17,105 @@
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">&#8801</label>
         <nav class="menu">
-            <a href="#">Estudios</a>
+            <a href="#">Inicio</a>
+            <a href="#estudos">Estudos</a>
             <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
+            <a href="#projetos">Projetos</a>
             <label for="check" class="esconder-menu">&#215</label>
         </nav>
     </header>
-    <section class="caja-2"><img class="foto-perfil" src="extra/foto-perfil2.jpeg" alt="">
+    <section class="caja-1"><img class="foto-perfil" src="extra/foto-perfil..jpg" alt="">
     <div class="caracte">
             <p class="ola ele">Ola, eu sou:</p>
             <p class="isaac ele">Isaac La Rosa</p>
-            <p class="front ele">Front-End Developer</p>
-            <p class="descr ele">Desenvolvimento Web. Programação de sites Responsivos</p>
+            <p class="descr ele">Front-End Developer</p>
+            <p class="descr ele">Desenvolvimento Web. Programador de sites Responsivos</p>
     </div>
     </section>
-            <!--<div id="estudios" class="estudios"></div>-->
+    
+    <section id="estudos" class="caja-2">
+        <h2 class="estudos">Estudos</h2>
+        <ul class="encino">
+            <li>Encino Medio Completo (Ano 2010)</li>
+            <li>Curso Manutenção e Concerto de Computadoras - Intututo Omega (Ano 2011)</li>
+            <li>Curso de Portugues Basico - Intituto ADRA ( 20 horas / Ano 2020 )</li>
+            <li>Curso de Portugues Intermedio - Intituto ADRA ( 16 horas / Ano 2020)</li>
+            <li>Curso Formação em Front-End - Intituto TOTI ( 90 horas / Ano 2022 )</li>
+            <li>Soluções de Negocios em Tecnologia - Intituto TOTI ( 8 horas / Ano 2023 )</li>
+        </ul>
+    </section>
 
-    <section id="habilidades" class="caja-habilidades">
+    <section id="habilidades" class="caja-habilidades logo">
             <p class="hab">Habilidades</p>
-    <div>
-            <img class="icono-html logo" src="extra/html-5.png" alt=""> 
-            <img class="icono-css logo" src="extra/css.png" alt="">
-            <img class="icono-js logo" src="extra/javascript.png" alt="">
-            <img class="icono-git logo" src="extra/icono-git.png" alt="">
-            <img class="icono-github logo" src="extra/icono-github.png" alt="">
-            <img class="icono-api logo" src="extra/icono-api.png" alt="">
-            <img class="icono-react logo" src="extra/logo-react.png" alt="">
-    </div>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="extra/html-5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/css.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/javascript.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/icono-api.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/icono-git.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/logo-react.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/icono-github.png" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="extra/html-5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/css.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/javascript.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/icono-api.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/icono-git.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/logo-react.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="extra/icono-github.png" alt="">
+                    </div>
+                </div>
+            </div>
     </section>
 
-    <div class="caja-contato">
-            <p id="contato" class="contato">Contato</p>
-        <section class="contact">
-            <form id="form" action="mailto:larosaisaac2@gimail.com" class="form" name="form">
-                <h3 class="tag"><span class="contate-me">Contate-me</span></h3>
-                <label for="nome">Nome <span>*</span></label>
-                <input name="nome" type="text" id="nome"placeholder="Isaac">
-                <label for="email">Email <span>*</span></label>
-                <input name="email" type="text" id="email" placeholder="Isaac@gmail.com">
-                <label for="message">Mensagem <span>*</span></label>
-                <textarea name="message" id="comentarios"cols="30"rows="5"></textarea>
-                <button type="submit" class="btn-enviar 
-                full">Enviar Mensagem</button>
-            </form>
-            <!--<a href="mailto:larosaisaac2@gimail.com" id="aprob"></a>-->
-        </section>
+    <section class="projetos">
+        <h2 class="projet" id="projetos">Projetos</h2>
+        <img src="extra/piratas del caribe 2.PNG" class="pirata" alt="">
+    </section>
+
+    <footer class="caja-contato">
             <div class="log">
                 <a href="#"><img class="redes-sociales" src="extra/logo-facebook.png" alt=""></a>
 
-                <a href=" https://www.instagram.com/invites/contact/?i=1uab0gxkc31wx&utm_content=1egb3tc" target="_blank"><img class="redes-sociales" src="extra/logo-instagran.png" alt=""></a>
+                <a href="#" target="_blank"><img class="redes-sociales" src="extra/logo-instagran.png" alt=""></a>
 
                 <a href=" https://wa.me/message/7T27W4STU4VSI1" target="_blank"><img class="redes-sociales" src="extra/logo-whatsapp-3.png" alt=""></a>
 
-                <a href="https://www.linkedin.com/psettings/invite-receive" target="_blank"><img class="redes-sociales" src="extra/logo-linkedin-2.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/isaac-la-rosa-a60a86251" target="_blank"><img class="redes-sociales" src="extra/logo-linkedin-2.png" alt=""></a>
 
                 <a href="https://github.com/Isaac-La-Rosa" target="_blank"><img class="redes-sociales" src="extra/logo-github-2.png" alt=""></a>
             </div>
              <a href="saber-mais-github.html" target="_blank "><button class="saber-mais">Saber 
                 Mais</button></a>
-    </div>
+    </footer>
     <script src="contain.js/index.js"></script>
 </body>
 </html>
